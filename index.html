@@ -84,6 +84,9 @@
             font-size: 1.3em;
             width: 30px;
             text-align: center;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
         }
         .rewards-grid {
             display: grid;
@@ -101,7 +104,7 @@
         .reward-item {
             margin-bottom: 20px;
             display: flex;
-            align-items: flex-start;
+            align-items: center;
             font-size: 0.95em;
         }
         .reward-icon {
@@ -111,6 +114,9 @@
             width: 25px;
             text-align: center;
             flex-shrink: 0;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
         }
         .reward-text {
             flex: 1;
@@ -166,18 +172,18 @@
 </head>
 <body>
     <h1>
-        <i class="fas fa-gamepad icon"></i>
+        <i class="fas fa-trophy icon"></i>
         <span class="gradient-text">S T F 상금 및 현상금</span>
     </h1>
 
     <h2>
-        <i class="fas fa-gift icon"></i>
+        <i class="fas fa-award icon"></i>
         <span class="gradient-text">상품 및 상금 목록</span>
     </h2>
     
     <div class="rewards-grid">
         <div class="reward-section">
-            <h3><i class="fas fa-trophy icon"></i><span class="gradient-text">상품</span></h3>
+            <h3><i class="fas fa-gift icon"></i><span class="gradient-text">상품</span></h3>
             <div class="reward-item">
                 <i class="fas fa-microchip reward-icon"></i>
                 <div class="reward-text">레벨 95 달성) RTX4090 ('우승팀' 1명 추첨)</div>
@@ -187,7 +193,7 @@
                 <div class="reward-text">레벨 90 달성) 미스터리 박스 확정 지급 (전원)</div>
             </div>
             <div class="reward-item">
-                <i class="fas fa-gift reward-icon"></i>
+                <i class="fas fa-heart reward-icon"></i>
                 <div class="reward-text">레벨 70 달성) 카카오 프렌즈 현물 인형 (20명 추첨)</div>
             </div>
             <div class="reward-item">
@@ -199,7 +205,7 @@
         <div class="reward-section">
             <h3><i class="fas fa-coins icon"></i><span class="gradient-text">상금</span></h3>
             <div class="reward-item">
-                <i class="fas fa-skull-crossbones reward-icon"></i>
+                <i class="fas fa-dragon reward-icon"></i>
                 <div class="reward-text">보스킬 인증 성공) 문화 상품권 2만원 (50명 추첨)</div>
             </div>
             <div class="reward-item">
@@ -211,7 +217,7 @@
         <div class="reward-section">
             <h3><i class="fas fa-users icon"></i><span class="gradient-text">팀 보상</span></h3>
             <div class="reward-item">
-                <i class="fas fa-award reward-icon"></i>
+                <i class="fas fa-trophy reward-icon"></i>
                 <div class="reward-text">우승 팀) 1위~10위 10만원, 11~20위 5만원</div>
             </div>
             <div class="reward-item">
@@ -230,6 +236,18 @@
                 <i class="fas fa-certificate reward-icon"></i>
                 <div class="reward-text">준우승 팀) 총 300만원</div>
             </div>
+        </div>
+    </div>
+
+    <h2 style="font-size: 1.8em; border-bottom: 2px solid #FD0C2C; padding-bottom: 10px; font-weight: 700; margin-top: 50px; margin-bottom: 30px; font-family: 'Orbitron', sans-serif; display: flex; justify-content: center; align-items: center; letter-spacing: 1px; text-align: center;">
+        <span style="background: linear-gradient(45deg, #FEBA05, #FD0C2C); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent; font-weight: 800;">현상금</span>
+    </h2>
+    
+    <div class="warning">
+        <i class="fas fa-exclamation-triangle icon"></i>
+        <div>
+            <strong>현상금은 전부 1P</strong><br>
+            *현상금의 상품과 포인트는 디스코드 최초 인증자에게만 지급됩니다 (수작업으로 진행하기 때문에 실시간 반영이 약간 늦어질 수 있습니다)
         </div>
     </div>
 </body>
