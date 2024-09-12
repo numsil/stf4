@@ -41,7 +41,7 @@
             text-fill-color: transparent;
             font-weight: 900;
         }
-        h1 {
+         h1 {
             font-size: 2.8em;
             text-align: center;
             margin-bottom: 40px;
@@ -49,13 +49,17 @@
             justify-content: center;
             align-items: center;
             text-transform: uppercase;
+            flex-wrap: nowrap; /* 줄바꿈 방지 */
+            white-space: nowrap; /* 줄바꿈 방지 */
         }
         h1 .icon {
-            margin-right: 50px; /* 아이콘과 텍스트 사이의 간격 조정 */
+            margin-right: 20px; /* 아이콘과 텍스트 사이의 간격 조정 */
             font-size: 1em; /* 아이콘 크기를 텍스트에 맞춤 */
+            flex-shrink: 0; /* 아이콘 크기 유지 */
         }
         h1 .gradient-text {
             filter: drop-shadow(2px 2px 4px rgba(253, 12, 44, 0.5));
+        }
         }
         h2 {
             font-size: 2em;
@@ -148,12 +152,29 @@
             width: 25px;
             text-align: center;
         }
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2em;
+            }
+            h1 .icon {
+                margin-right: 10px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 1.5em;
+            }
+            h1 .icon {
+                margin-right: 5px;
+            }
+        }
     </style>
 </head>
 <body>
     <h1>
         <i class="fas fa-gamepad icon"></i>
-        <span class="gradient-text">S T F 상금 및 현상금</span>
+        <span class="gradient-text" style="margin-left: 20px">S T F 상금 및 현상금</span>
     </h1>
 
     <h2>
