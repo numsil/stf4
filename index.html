@@ -107,7 +107,9 @@
         .reward-item {
             margin-bottom: 15px;
             display: flex;
-            align-items: flex-start;
+            align-items: center;
+            white-space: nowrap;
+            overflow: hidden;
         }
         .reward-icon {
             font-size: 1.2em;
@@ -119,6 +121,8 @@
         }
         .reward-text {
             flex: 1;
+            overflow: hidden;
+            text-overflow: ellipsis;
         }
         .bounty-grid {
             display: grid;
@@ -175,6 +179,12 @@
             .bounty-grid {
                 grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
             }
+                      .reward-item {
+                font-size: 0.9em;
+            }
+            .reward-icon {
+                margin-right: 10px;
+            }
         }
 
         @media (max-width: 480px) {
@@ -198,10 +208,10 @@
                 width: 25px;
             }
             .reward-item {
-                flex-direction: column;
+                font-size: 0.8em;
             }
             .reward-icon {
-                margin-bottom: 5px;
+                margin-right: 5px;
             }
             .warning {
                 flex-direction: column;
