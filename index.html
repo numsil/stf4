@@ -102,7 +102,9 @@
             box-shadow: 0 0 15px rgba(254, 186, 5, 0.3);
         }
         .reward-item {
-            margin-bottom: 10px;
+            margin-bottom: 15px;
+        }
+        .reward-content {
             display: flex;
             align-items: flex-start;
             font-size: 0.9em;
@@ -118,6 +120,12 @@
         .reward-text {
             flex: 1;
             word-break: break-word;
+        }
+        .reward-note {
+            font-size: 0.8em;
+            color: var(--highlight-color);
+            margin-top: 5px;
+            margin-left: 30px;
         }
         
         @media (max-width: 768px) {
@@ -143,9 +151,8 @@
             .reward-section {
                 padding: 10px;
             }
-            .reward-item {
+            .reward-content {
                 font-size: 0.8em;
-                margin-bottom: 8px;
             }
         }
 
@@ -172,9 +179,8 @@
             .reward-section {
                 padding: 8px;
             }
-            .reward-item {
+            .reward-content {
                 font-size: 0.75em;
-                margin-bottom: 6px;
             }
             .reward-icon {
                 font-size: 0.9em;
@@ -197,58 +203,82 @@
     
     <div class="rewards-grid">
         <div class="reward-section">
-            <h3><i class="fas fa-gift icon"></i><span class="gradient-text">상품</span></h3>
+            <h3><i class="fas fa-gift icon"></i><span class="gradient-text">기본 미션 달성 보상</span></h3>
             <div class="reward-item">
-                <i class="fas fa-microchip reward-icon"></i>
-                <div class="reward-text">레벨 95 달성) RTX4090 ('우승팀' 1명 추첨)</div>
+                <div class="reward-content">
+                    <i class="fas fa-microchip reward-icon"></i>
+                    <div class="reward-text">레벨 95 달성) RTX4090 ('우승팀' 1명 추첨)</div>
+                </div>
             </div>
             <div class="reward-item">
-                <i class="fas fa-box-open reward-icon"></i>
-                <div class="reward-text">레벨 90 달성) 미스터리 박스 확정 지급 (전원)</div>
+                <div class="reward-content">
+                    <i class="fas fa-box-open reward-icon"></i>
+                    <div class="reward-text">레벨 90 달성) 미스터리 박스 혹은 문화상품권 5000원권 지급 (전원)</div>
+                </div>
+                <div class="reward-note">*최고 레벨 기준 미스터리 박스 250개 소진시 문화상품권으로 대체 지급</div>
             </div>
             <div class="reward-item">
-                <i class="fas fa-heart reward-icon"></i>
-                <div class="reward-text">레벨 70 달성) 카카오 프렌즈 현물 인형 (20명 추첨)</div>
+                <div class="reward-content">
+                    <i class="fas fa-heart reward-icon"></i>
+                    <div class="reward-text">레벨 70 달성) 카카오 프렌즈 현물 인형 (20명 추첨)</div>
+                </div>
             </div>
             <div class="reward-item">
-                <i class="fas fa-box reward-icon"></i>
-                <div class="reward-text">레벨 50 달성) 미스터리 박스 (000명 추첨)</div>
+                <div class="reward-content">
+                    <i class="fas fa-box reward-icon"></i>
+                    <div class="reward-text">레벨 50 달성) 문화상품권 1만원 (100명 추첨)</div>
+                </div>
             </div>
         </div>
 
         <div class="reward-section">
             <h3><i class="fas fa-coins icon"></i><span class="gradient-text">상금</span></h3>
             <div class="reward-item">
-                <i class="fas fa-dragon reward-icon"></i>
-                <div class="reward-text">보스킬 인증 성공) 문화 상품권 2만원 (50명 추첨)</div>
+                <div class="reward-content">
+                    <i class="fas fa-dragon reward-icon"></i>
+                    <div class="reward-text">보스킬 인증 성공) 문화 상품권 2만원 (50명 추첨)</div>
+                </div>
             </div>
             <div class="reward-item">
-                <i class="fas fa-crown reward-icon"></i>
-                <div class="reward-text">전직별 포인트 1위) 문화 상품권 3만원 (19명)</div>
+                <div class="reward-content">
+                    <i class="fas fa-crown reward-icon"></i>
+                    <div class="reward-text">전직별 포인트 1위) 문화 상품권 3만원 (19명)</div>
+                </div>
+                <div class="reward-note">*미전직 혹은 전직 변경은 인정되지 않습니다</div>
             </div>
         </div>
 
         <div class="reward-section">
             <h3><i class="fas fa-users icon"></i><span class="gradient-text">팀 보상</span></h3>
             <div class="reward-item">
-                <i class="fas fa-trophy reward-icon"></i>
-                <div class="reward-text">우승 팀) 1위~10위 10만원, 11~20위 5만원</div>
+                <div class="reward-content">
+                    <i class="fas fa-trophy reward-icon"></i>
+                    <div class="reward-text">우승 팀) 1위~10위 10만원, 11~20위 5만원</div>
+                </div>
             </div>
             <div class="reward-item">
-                <i class="fas fa-medal reward-icon"></i>
-                <div class="reward-text">준우승 팀) 1위~10위 5만원, 11~20위 3만원</div>
+                <div class="reward-content">
+                    <i class="fas fa-medal reward-icon"></i>
+                    <div class="reward-text">준우승 팀) 1위~10위 5만원, 11~20위 3만원</div>
+                </div>
+                <div class="reward-note">*팀 보상은 문화 상품권으로 지급됩니다</div>
             </div>
+
         </div>
 
         <div class="reward-section">
             <h3><i class="fas fa-video icon"></i><span class="gradient-text">스트리머 보상</span></h3>
             <div class="reward-item">
-                <i class="fas fa-star reward-icon"></i>
-                <div class="reward-text">우승 팀) 총 700만원</div>
+                <div class="reward-content">
+                    <i class="fas fa-star reward-icon"></i>
+                    <div class="reward-text">우승 팀) 총 700만원</div>
+                </div>
             </div>
             <div class="reward-item">
-                <i class="fas fa-certificate reward-icon"></i>
-                <div class="reward-text">준우승 팀) 총 300만원</div>
+                <div class="reward-content">
+                    <i class="fas fa-certificate reward-icon"></i>
+                    <div class="reward-text">준우승 팀) 총 300만원</div>
+                </div>
             </div>
         </div>
     </div>
